@@ -16,6 +16,19 @@ const productos = [
     },
     {
         id: "skincare-2",
+        titulo: "Cepillo Colgate nene",
+        imagen: "/public/images/e-commers/Cepillo Colgate nene.png",
+        categoria: {
+            nombre: "Skincare",
+            id: "skincare"
+        },
+        precio: 200.00,
+        stock: 30,
+        id_marca: 2,
+        id_proveedor: 2
+    },
+        {
+        id: "skincare-3",
         titulo: "Crema Tópica Betader",
         imagen: "/public/images/e-commers/Betaderm.png",
         categoria: {
