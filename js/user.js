@@ -66,6 +66,6 @@ document.addEventListener('DOMContentLoaded', function (){
 
 document.querySelector(".crear-usuario").addEventListener('click', function () {
         console.log("Crear usuario")
-        window.location.href = "/resources/html/register.html"    })
+        window.location.href = "/pages/register.html"    })
     
 });
