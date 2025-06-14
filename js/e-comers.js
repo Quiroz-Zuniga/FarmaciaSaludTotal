@@ -4,7 +4,7 @@ const productos = [
     {
         id: "skincare-1",
         titulo: "Crema Hidratante Facial",
-        imagen: "/",
+        imagen: "/public/images/e-commers/carebe.png",
         categoria: {
             nombre: "Skincare",
             id: "skincare"
@@ -17,7 +17,7 @@ const productos = [
     {
         id: "skincare-2",
         titulo: "Crema Tópica Betader",
-        imagen: "/",
+        imagen: "/public/images/e-commers/Betaderm.png",
         categoria: {
             nombre: "Skincare",
             id: "skincare"
@@ -32,7 +32,7 @@ const productos = [
     {
         id: "medicamento-1",
         titulo: "Acetaminofen 500mg",
-        imagen: "/",
+        imagen: "/public/images/e-commers/Acetaminofen.png",
         categoria: {
             nombre: "Medicamentos",
             id: "medicamentos"
@@ -45,7 +45,7 @@ const productos = [
     {
         id: "medicamento-2",
         titulo: "Aliviol 500mg",
-        imagen: "/",
+        imagen: "/public/images/e-commers/Aliviol.png",
         categoria: {
             nombre: "Medicamentos",
             id: "medicamentos"
@@ -60,7 +60,7 @@ const productos = [
     {
         id: "vitamina-1",
         titulo: "Sukrol 1000mg",
-        imagen: "/",
+        imagen: "/public/images/e-commers/Sukrol.png",
         categoria: {
             nombre: "Vitaminas",
             id: "vitaminas"
@@ -73,7 +73,7 @@ const productos = [
     {
         id: "vitamina-2",
         titulo: "Sukrol Mujer 1000mg",
-        imagen: "/",
+        imagen: "/public/images/e-commers/Sukrol Mujer.png",
         categoria: {
             nombre: "Vitaminas",
             id: "vitaminas"
@@ -134,7 +134,7 @@ function actualizarBotonesAgregar (){
     })
 }
 
-let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
