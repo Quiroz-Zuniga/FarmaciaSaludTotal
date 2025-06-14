@@ -40,7 +40,45 @@ const productos = [
         id_marca: 2,
         id_proveedor: 2
     },
-
+       {
+        id: "skincare-4",
+        titulo: "Cepillo Colgate",
+        imagen: "/public/images/e-commers/Cepillo colgate.png",
+        categoria: {
+            nombre: "Skincare",
+            id: "skincare"
+        },
+        precio: 100.00,
+        stock: 50,
+        id_marca: 1,
+        id_proveedor: 1
+    },
+        {
+        id: "skincare-5",
+        titulo: "Colgate Luminous White",
+        imagen: "/public/images/e-commers/Colgate Luminous White.png",
+        categoria: {
+            nombre: "Skincare",
+            id: "skincare"
+        },
+        precio: 200.30,
+        stock: 30,
+        id_marca: 2,
+        id_proveedor: 2
+    },
+ {
+        id: "skincare-6",
+        titulo: "Cepillo Sensative",
+        imagen: "/public/images/e-commers/Colgate Sensative.png",
+        categoria: {
+            nombre: "Skincare",
+            id: "skincare"
+        },
+        precio: 300.60,
+        stock: 70,
+        id_marca: 1,
+        id_proveedor: 1
+    },
     // Medicamentos
     {
         id: "medicamento-1",
@@ -65,6 +103,84 @@ const productos = [
         },
         precio: 209.10,
         stock: 50,
+        id_marca: 2,
+        id_proveedor: 2
+    },
+    {
+        id: "medicamento-3",
+        titulo: "Ibuprofeno 400mg",
+        imagen: "/public/images/e-commers/Ibufrofeno.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 250.10,
+        stock: 50,
+        id_marca: 1,
+        id_proveedor: 1
+    },
+      {
+        id: "medicamento-5",
+        titulo: "Panadol Gripe",
+        imagen: "/public/images/e-commers/Panadol gripe.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 150.30,
+        stock: 50,
+        id_marca: 2,
+        id_proveedor: 2
+    },
+      {
+        id: "medicamento-6",
+        titulo: "Aleve 200mg",
+        imagen: "/public/images/e-commers/Aleve.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 300.50,
+        stock: 70,
+        id_marca: 1,
+        id_proveedor: 1
+    },
+          {
+        id: "medicamento-7",
+        titulo: "Diclofenaco 100mg",
+        imagen: "/public/images/e-commers/Diclofenaco.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 180.40,
+        stock: 30,
+        id_marca: 2,
+        id_proveedor: 2
+    },
+      {
+        id: "medicamento-8",
+        titulo: "Doceplex Inyectable",
+        imagen: "/public/images/e-commers/Doceplex.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 400.10,
+        stock: 30,
+        id_marca: 1,
+        id_proveedor: 1
+    },
+          {
+        id: "medicamento-9",
+        titulo: "Iboprodol 600mg",
+        imagen: "/public/images/e-commers/Iboprodol.png",
+        categoria: {
+            nombre: "Medicamentos",
+            id: "medicamentos"
+        },
+        precio: 180.40,
+        stock: 30,
         id_marca: 2,
         id_proveedor: 2
     },
@@ -95,7 +211,33 @@ const productos = [
         stock: 60,
         id_marca: 2,
         id_proveedor: 2
-    }
+    },
+    {
+        id: "vitamina-3",
+        titulo: "Sukrol Vigor",
+        imagen: "/public/images/e-commers/Sukrol Vigor.png",
+        categoria: {
+            nombre: "Vitaminas",
+            id: "vitaminas"
+        },
+        precio: 550.10,
+        stock: 60,
+        id_marca: 1,
+        id_proveedor: 1
+    },
+    {
+        id: "vitamina-4",
+        titulo: "Ultra Doceplex 10mL",
+        imagen: "/public/images/e-commers/Ultra Doceplex.png",
+        categoria: {
+            nombre: "Vitaminas",
+            id: "vitaminas"
+        },
+        precio: 620.50,
+        stock: 20,
+        id_marca: 2,
+        id_proveedor: 2
+    },
 ];
 
 const contenedorProductos = document.querySelector("#contenedor-producto");
