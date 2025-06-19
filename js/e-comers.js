@@ -289,7 +289,7 @@ function actualizarBotonesAgregar (){
     })
 }
 
-let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
 
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
