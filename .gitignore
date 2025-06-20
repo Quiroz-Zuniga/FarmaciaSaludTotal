@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+.env
+*.log
+package-lock.json
+
+# XAMPP / Base de datos local
+*.sql
+*.sqlite
+*.db
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Archivos de configuración personales
+*.local
+*.env.*
+
+# Build/compilación (si tienes)
+dist/
+build/
+
+# Frontend si usas algún builder
+/public/images/temp/
