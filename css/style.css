@@ -104,7 +104,7 @@ main {
 
 /* Footer */
 footer {
-    background: #4AD66D;
+    background: #00B40C;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -163,8 +163,8 @@ footer {
 }
 
 .antes, .sigue {
-    background: rgba(0,0,0,0.5);
-    color: #f5f5f5;
+    background: rgba(0, 0, 0, 0);
+    color: #f5f5f500;
     border: none;
     font-size: 2rem;
     padding: 10px;
@@ -178,3 +178,235 @@ footer {
 
 .antes { left: 10px; }
 .sigue { right: 10px; }
+
+/* servicio */
+.info-cinta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7e02f00; 
+    padding: 12px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.info-cinta .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    padding: 10px 16px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.info-cinta .item:hover {
+    background-color: rgba(45, 245, 5, 0.2);
+}
+
+.info-cinta .icon {
+    font-size: 2.5rem;
+    color: #00B40C;
+}
+
+/* contenido */
+.contenido {
+    background-color: #f1fdf6;
+    padding: 60px 20px;
+}
+
+.contenido-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.contenido-texto {
+    flex: 1 1 500px;
+    text-align: left;
+}
+
+.contenido-texto h2 {
+    font-size: 2.5rem;
+    color: #0ec235;
+    margin-bottom: 20px;
+}
+
+.contenido-texto p {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.contenido-lista {
+    list-style: none;
+    padding-left: 150px;
+    margin-bottom: 20px;
+}
+
+.contenido-lista li {
+    font-size: 0.8rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-lista i {
+    color: #27ae60;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-ver-productos:hover {
+    background-color: #219150;
+}
+
+.contenido-imagen {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.contenido-imagen img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Sección general */
+.promociones-del-mes {
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.promociones-del-mes h2 {
+  color: #2e7d32;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.productos-promocion {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Tarjetas individuales */
+.promo-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 220px;
+  padding: 20px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.promo-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promo-etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #009688;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.promo-card h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
+.promo-card .marca {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 0.95rem;
+}
+
+.promo-card .nota {
+  font-size: 0.85rem;
+  color: #2e7d32;
+  margin: 8px 0;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+/* footer 1 */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  padding: 30px 50px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logo {
+  flex: 2 2 200px;
+}
+
+.logo-highlight {
+  color: green;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: green;
+  cursor: pointer;
+}
+
+/* Iconos (FontAwesome) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
