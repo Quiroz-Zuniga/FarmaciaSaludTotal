@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Factura - Salud Total</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .factura { max-width: 800px; margin: auto; border: 1px solid #ccc; padding: 2rem; }
+    h1 { text-align: center; color: #00a80a; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: center; }
+    .totales { text-align: right; margin-top: 1rem; font-weight: bold; }
+    #descargar { margin-top: 2rem; background: #00a80a; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="factura" id="factura">
+    <h1>Farmacia Salud Total</h1>
+    <p><strong>Factura No.:</strong> <span id="factura-id"></span></p>
+    <p><strong>Fecha:</strong> <span id="factura-fecha"></span></p>
+    <p><strong>Dirección:</strong> <span id="factura-direccion"></span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="factura-items"></tbody>
+    </table>
+    <p class="totales">Total: HND<span id="factura-total"></span></p>
+  </div>
+  <button id="descargar">Descargar PDF</button>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id_venta");
+
+    fetch(`http://localhost:3000/api/factura/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.length === 0) return alert("Factura no encontrada");
+
+        document.getElementById("factura-id").textContent = data[0].id_venta;
+        document.getElementById("factura-fecha").textContent = new Date(data[0].fecha_venta).toLocaleString();
+        document.getElementById("factura-direccion").textContent = data[0].direccion_envio;
+        document.getElementById("factura-total").textContent = data[0].total;
+
+        const items = document.getElementById("factura-items");
+        data.forEach(item => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${item.nombre_producto}</td>
+            <td>${item.cantidad}</td>
+            <td>$${item.precio_unitario}</td>
+            <td>$${item.subtotal}</td>
+          `;
+          items.appendChild(row);
+        });
+      });
+
+    document.getElementById("descargar").addEventListener("click", () => {
+      const factura = document.getElementById("factura");
+      html2pdf().from(factura).save("factura.pdf");
+    });
+  </script>
+</body>
+</html>

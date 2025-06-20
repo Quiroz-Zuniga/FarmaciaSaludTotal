@@ -1,268 +1,29 @@
 
-// const productos = [
-//     // Skincare
-//     {
-//         id: "skincare-1",
-//         titulo: "Crema Hidratante Facial",
-//         imagen: "/public/images/e-commers/carebe.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 250.00,
-//         stock: 50,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//     {
-//         id: "skincare-2",
-//         titulo: "Cepillo Colgate nene",
-//         imagen: "/public/images/e-commers/Cepillo Colgate nene.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 200.00,
-//         stock: 30,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//         {
-//         id: "skincare-3",
-//         titulo: "Crema Tópica Betader",
-//         imagen: "/public/images/e-commers/Betaderm.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 180.00,
-//         stock: 40,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//        {
-//         id: "skincare-4",
-//         titulo: "Cepillo Colgate",
-//         imagen: "/public/images/e-commers/Cepillo colgate.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 100.00,
-//         stock: 50,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//         {
-//         id: "skincare-5",
-//         titulo: "Colgate Luminous White",
-//         imagen: "/public/images/e-commers/Colgate Luminous White.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 200.30,
-//         stock: 30,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//  {
-//         id: "skincare-6",
-//         titulo: "Cepillo Sensative",
-//         imagen: "/public/images/e-commers/Colgate Sensative.png",
-//         categoria: {
-//             nombre: "Skincare",
-//             id: "skincare"
-//         },
-//         precio: 300.60,
-//         stock: 70,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//     // Medicamentos
-//     {
-//         id: "medicamento-1",
-//         titulo: "Acetaminofen 500mg",
-//         imagen: "/public/images/e-commers/Acetaminofen.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 147.25,
-//         stock: 100,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//     {
-//         id: "medicamento-2",
-//         titulo: "Aliviol 500mg",
-//         imagen: "/public/images/e-commers/Aliviol.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 209.10,
-//         stock: 50,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//     {
-//         id: "medicamento-3",
-//         titulo: "Ibuprofeno 400mg",
-//         imagen: "/public/images/e-commers/Ibufrofeno.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 250.10,
-//         stock: 50,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//       {
-//         id: "medicamento-5",
-//         titulo: "Panadol Gripe",
-//         imagen: "/public/images/e-commers/Panadol gripe.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 150.30,
-//         stock: 50,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//       {
-//         id: "medicamento-6",
-//         titulo: "Aleve 200mg",
-//         imagen: "/public/images/e-commers/Aleve.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 300.50,
-//         stock: 70,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//           {
-//         id: "medicamento-7",
-//         titulo: "Diclofenaco 100mg",
-//         imagen: "/public/images/e-commers/Diclofenaco.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 180.40,
-//         stock: 30,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//       {
-//         id: "medicamento-8",
-//         titulo: "Doceplex Inyectable",
-//         imagen: "/public/images/e-commers/Doceplex.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 400.10,
-//         stock: 30,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//           {
-//         id: "medicamento-9",
-//         titulo: "Iboprodol 600mg",
-//         imagen: "/public/images/e-commers/Iboprodol.png",
-//         categoria: {
-//             nombre: "Medicamentos",
-//             id: "medicamentos"
-//         },
-//         precio: 180.40,
-//         stock: 30,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-
-//     // Vitaminas
-//     {
-//         id: "vitamina-1",
-//         titulo: "Sukrol 1000mg",
-//         imagen: "/public/images/e-commers/Sukrol.png",
-//         categoria: {
-//             nombre: "Vitaminas",
-//             id: "vitaminas"
-//         },
-//         precio: 450.00,
-//         stock: 80,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//     {
-//         id: "vitamina-2",
-//         titulo: "Sukrol Mujer 1000mg",
-//         imagen: "/public/images/e-commers/Sukrol Mujer.png",
-//         categoria: {
-//             nombre: "Vitaminas",
-//             id: "vitaminas"
-//         },
-//         precio: 520.50,
-//         stock: 60,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-//     {
-//         id: "vitamina-3",
-//         titulo: "Sukrol Vigor",
-//         imagen: "/public/images/e-commers/Sukrol Vigor.png",
-//         categoria: {
-//             nombre: "Vitaminas",
-//             id: "vitaminas"
-//         },
-//         precio: 550.10,
-//         stock: 60,
-//         id_marca: 1,
-//         id_proveedor: 1
-//     },
-//     {
-//         id: "vitamina-4",
-//         titulo: "Ultra Doceplex 10mL",
-//         imagen: "/public/images/e-commers/Ultra Doceplex.png",
-//         categoria: {
-//             nombre: "Vitaminas",
-//             id: "vitaminas"
-//         },
-//         precio: 620.50,
-//         stock: 20,
-//         id_marca: 2,
-//         id_proveedor: 2
-//     },
-// ];
 let productos = [];
 fetch('http://localhost:3000/api/productos')
   .then(res => res.json())
   .then(data => {
-    productos = data.map(p => ({
-      id: `producto-${p.id_producto}`,
-      titulo: p.nombre,
-      imagen: seleccionarImagen(p.nombre), // Función que veremos abajo
-      categoria: {
-        nombre: "Medicamentos",
-        id: "medicamentos"
-      },
-      precio: p.precio,
-      stock: p.stock,
-      id_marca: p.id_marca,
-      id_proveedor: p.id_proveedor
-    }));
+productos = data.map(p => ({
+  id: `producto-${p.id_producto}`,
+  titulo: p.nombre,
+  imagen: p.imagen,
+  categoria: {
+    nombre: p.categoria_nombre,
+    id: p.categoria_nombre.toLowerCase() 
+  },
+  precio: p.precio,
+  stock: p.stock,
+  id_marca: p.id_marca,
+  id_proveedor: p.id_proveedor
+}));
+;
     cargarProductos(productos);
   });
-function seleccionarImagen(nombreProducto) {
-  const nombre = nombreProducto.toLowerCase();
-  if (nombre.includes("acetaminofen")) return "/public/images/e-commers/Acetaminofen.png";
-  return "/public/images/e-commers/default.png";
-}
+// function seleccionarImagen(nombreProducto) {
+//   const nombre = nombreProducto.toLowerCase();
+//   if (nombre.includes("acetaminofen")) return "/public/images/e-commers/Acetaminofen.png";
+//   return "/public/images/e-commers/default.png";
+// }
 
 const contenedorProductos = document.querySelector("#contenedor-producto");
 const botoncategoria = document.querySelectorAll(".boton-categoria");
@@ -288,7 +49,7 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 };
 
-cargarProductos(productos);
+// cargarProductos(productos);
 
 botoncategoria.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -313,34 +74,35 @@ function actualizarBotonesAgregar (){
     })
 }
 
-let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+// let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
 
 function agregarAlCarrito(e) {
-    const idBoton = e.currentTarget.id;
-    const productosAgregado = productos.find(productos => productos.id === idBoton);
+  const idBoton = e.currentTarget.id;
+  const productosAgregado = productos.find(productos => productos.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)){
-        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantida++;
-    }else{
-        // Crear una copia limpia con los campos que el carrito necesita:
-        const productoParaCarrito = {
-            id: productosAgregado.id,
-            titulo: productosAgregado.titulo,
-            imagen: productosAgregado.imagen,
-            precio: productosAgregado.precio,
-            cantida: 1
-        };
+  let carrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
 
-        productosEnCarrito.push(productoParaCarrito);
-    }
+  if (carrito.some(producto => producto.id === idBoton)) {
+    const index = carrito.findIndex(producto => producto.id === idBoton);
+    carrito[index].cantidad++;
+  } else {
+    const productoParaCarrito = {
+      id: productosAgregado.id,
+      titulo: productosAgregado.titulo,
+      imagen: productosAgregado.imagen,
+      precio: productosAgregado.precio,
+      cantidad: 1
+    };
+    carrito.push(productoParaCarrito);
+  }
 
-    actualizarNumerito();
-
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+  localStorage.setItem("productos-en-carrito", JSON.stringify(carrito));
+  actualizarNumerito();
 }
 
-function actualizarNumerito(){
-    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantida, 0);
-    numerito.innerHTML = nuevoNumerito;
-};
+
+function actualizarNumerito() {
+  const carrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+  const nuevoNumerito = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+  numerito.innerHTML = nuevoNumerito;
+}

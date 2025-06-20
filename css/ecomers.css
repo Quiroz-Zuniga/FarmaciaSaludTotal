@@ -228,7 +228,7 @@ main{
     cursor: pointer;
 }
 
-.carrito-producto .producto-imagen{
+.carrito-producto-imagen{
 
     width: 4rem;
     border-radius: 1rem;
@@ -274,6 +274,6 @@ main{
     border-bottom-right-radius: 1rem;
 }
 
-.disable{
-    display: none;
+.disabled {
+  display: none !important;
 }
