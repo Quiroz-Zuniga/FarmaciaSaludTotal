@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Farmacia Salud Total - Inicio</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -36,43 +39,185 @@
 
     <!-- CONTENIDO -->
     <main>
+        
+        <!-- Carrusel de productos -->
+       <div class="carrusel">
+  <button class="antes">&#10094;</button>
+  <div class="carrusel_contenedor">
+    <div class="carrusel-item"><img src="public/images/carrusel/carrusel1.jpeg" alt="Acetaminofen"></div>
+    <div class="carrusel-item"><img src="public/images/carrusel/carrusel2.jpeg" alt="Aleve"></div>
+    <div class="carrusel-item"><img src="public/images/carrusel/carrusel3.jpeg" alt="Aliviol"></div>
+  </div>
+  <button class="sigue">&#10095;</button>
+</div>
+
+<!-- servicio -->
+<div class="info-cinta">
+    <div class="item">
+        <i class="fas fa-truck icon"></i>
+        <span class="text">SERVICIO A DOMICILIO</span>
+    </div>
+    <div class="item">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <span class="text">YO PASO</span>
+    </div>
+    <div class="item">
+        <i class="fas fa-box icon"></i>
+        <span class="text">RASTREAR MI PEDIDO</span>
+    </div>
+    <div class="item">
+        <i class="fas fa-clock icon"></i>
+        <span class="text">HORARIOS</span>
+    </div>
+</div>
+
+
+        <!-- banner  -->
         <section class="banner">
             <img src="public/images/image 3.png" alt="Banner de Farmacia Salud Total" />
         </section>
 
-        <section class="contenido">
-            <h2>Bienvenido a nuestra farmacia</h2>
-            <p>Ofrecemos productos farmacéuticos, de cuidado personal y de primera necesidad para tu bienestar.</p>
-        </section>
+       <section class="contenido">
+  <div class="contenido-wrapper">
+    <div class="contenido-texto">
+      <h2>Bienvenido a nuestra farmacia</h2>
+      <p>
+        En <strong>Farmacia Salud Total</strong> nos preocupamos por tu salud. Aquí encontrarás
+        productos de calidad, atención personalizada y promociones exclusivas.
+      </p>
+      <ul class="contenido-lista">
+        <li><i class="fas fa-capsules"></i> Medicamentos certificados y seguros</li>
+        <li><i class="fas fa-user-nurse"></i> Atención farmacéutica personalizada</li>
+        <li><i class="fas fa-percent"></i> Promociones mensuales imperdibles</li>
+        <li><i class="fas fa-clock"></i> Servicio rápido y eficiente</li>
+      </ul>
+      
+    </div>
+    <div class="contenido-imagen">
+      <img src="public/images/logo.png" alt="Farmacia Salud Total" />
+    </div>
+  </div>
+</section>
 
-        <!-- Carrusel de productos -->
-        <div class="carrusel">
-            <button class="antes">&#10094;</button>
-            <div class="carrusel_contenedor">
-                <div class="carrusel-item"><img src="public/images/e-commers/Acetaminofen%201.png" alt="Acetaminofen"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Aleve%201.png" alt="Aleve"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Aliviol%201.png" alt="Aliviol"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Doceplex%201.png" alt="Doceplex"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Iboprodol%201.png" alt="Iboprodol"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Ibufrofeno%20calox%201.png" alt="Ibufrofeno calox"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Panadol%20gripe%201.png" alt="Panadol gripe"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Sukrol%20bebible%201.png" alt="Sukrol bebible"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Sukrol%20Mujer%201.png" alt="Sukrol Mujer"></div>
-                <div class="carrusel-item"><img src="public/images/e-commers/Sukrol%20Vigor%201.png" alt="Sukrol Vigor"></div>
-            </div>
-            <button class="sigue">&#10095;</button>
-        </div>
-    </main>
+<!-- promo -->
+<section id="promociones" class="promociones-del-mes">
+  <h2>PROMOCIONES DEL MES</h2>
+  <div class="productos-promocion">
+    <!-- Tarjeta 1 -->
+    <div class="promo-card">
+      <div class="promo-etiqueta">44%</div>
+      <img src="/public/images/e-commers/Acetaminofen 1.png" alt="Acetaminofen">
+      <h3>Panel Multi-sintoma</h3>
+      <p class="marca">Panadol</p>
+      <p class="nota">* 44% con requisito de cupón, entregado por el laboratorio</p>
+      <div class="iconos">
+        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-question-circle"></i>
+      </div>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="promo-card">
+      <div class="promo-etiqueta">23%</div>
+      <img src="/public/images/e-commers/Sukrol Vigor 1.png" alt="Aleve">
+      <h3>Sukrol vigor</h3>
+      <p class="marca">Sukrol</p>
+      <p class="nota">* 23% con requisito de cupón, entregado por el laboratorio</p>
+      <div class="iconos">
+        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-question-circle"></i>
+      </div>
+    </div>
+    <!-- Tarjeta 3 -->
+    <div class="promo-card">
+      <div class="promo-etiqueta">32%</div>
+      <img src="/public/images/e-commers/Aliviol 1.png" alt="Aliviol 1">
+      <h3>Aliviol forte</h3>
+      <p class="marca">Aliviol</p>
+      <p class="nota">* 32% con requisito de cupón, entregado por el laboratorio</p>
+      <div class="iconos">
+        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-question-circle"></i>
+      </div>
+    </div>
+    <!-- Tarjeta 4 -->
+     <div class="promo-card">
+      <div class="promo-etiqueta">28%</div>
+      <img src="/public/images/e-commers/Aleve 1.png" alt="Aleve">
+      <h3>Eleve liqui-gel</h3>
+      <p class="marca">Panadol</p>
+      <p class="nota">* 28% con requisito de cupón, entregado por el laboratorio</p>
+      <div class="iconos">
+        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-question-circle"></i>
+      </div>
+    </div>
+    <!-- Tarjeta 5 -->
+    <div class="promo-card">
+      <div class="promo-etiqueta">32%</div>
+      <img src="/public/images/e-commers/Sukrol bebible 1.png" alt="Aliviol 1">
+      <h3>Sukrol bebible</h3>
+      <p class="marca">SuKrol</p>
+      <p class="nota">* 32% con requisito de cupón, entregado por el laboratorio</p>
+      <div class="iconos">
+        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-question-circle"></i>
+      </div>
+    </div>
+    
+
+</div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+     <div style="display: flex; align-items: center;">
+  <img src="/public/images/logo.png" alt="Logo" style="height: 150px; margin-right: 20px;">
+  <h2 style="margin: 0;">Salud Total</h2>
+</div>
+
+    </div>
+
+    <div class="footer-column">
+      <h3>CONTÁCTANOS</h3>
+      <p>📞 Llámanos: 2276-4747</p>
+      <p>📧 info@farmaciasdelahorro.hn</p>
+      <p>📩 Vacantes: <br>vacantes@centroamericanconsulting.com</p>
+      <div class="social-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Servicios al cliente</h3>
+      <p>Términos y condiciones</p>
+      <p>Política de privacidad</p>
+      <p>Centro de ayuda</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Gestionar cuenta</h3>
+      <p>Mi cuenta</p>
+      <p>Registrarme</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Sitios de interés</h3>
+      <p>Sucursales</p>
+      <p>Horarios de atención</p>
+      <p>Empleos</p>
+    </div>
+  </div>
+</footer>
 
     <footer>
-        <div class="footer-social">
-            <a href="#"><img src="public/images/X.png" alt="X" /></a>
-            <a href="#"><img src="public/images/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="public/images/facebook.png" alt="Facebook" /></a>
-        </div>
         <p>&copy; 2025 Farmacia Salud Total. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="js/Carrucel.js"></script>
+    <script src="/js/carrusel.js"></script>
 </body>
 </html>
